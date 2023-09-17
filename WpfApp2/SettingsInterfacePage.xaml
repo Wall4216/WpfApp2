@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp2.SettingsInterfacePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Настройки интерфейса" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Настройки интерфейса" FontSize="20" Margin="10"/>
+            <ComboBox Margin="10" Width="200">
+                <ComboBoxItem Content="Светлая тема"/>
+                <ComboBoxItem Content="Темная тема"/>
+            </ComboBox>
+            <Slider Minimum="10" Maximum="30" TickFrequency="5" IsSnapToTickEnabled="True" Margin="10"/>
+            <TextBlock Text="Размер шрифта" Margin="10"/>
+            <CheckBox Content="Показать анимации" Margin="10" IsChecked="True"/>
+            <Button Content="Сохранить" Width="200" Margin="10"/>
+            <Button Content="Вернуться на главное меню" Width="200" Margin="10" Click="OnBackClicked"/>
+        </StackPanel>
+    </Grid>
+</Window>
