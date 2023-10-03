@@ -11,6 +11,9 @@
             <Button x:Name="Main" Content="Главное меню" Width="120" Margin="5" Click="OnMainMenuClicked"/>
             <Button x:Name="Settings" Content="Настройки" Width="120" Margin="5" Click="OnSettingsClicked"/>
             <Button x:Name="Profile" Content="Мой Профиль" Width="120" Margin="5" Click="OnProfileClicked"/>
+            <Button x:Name="Users" Content="Пользователи" Width="120" Margin="5" Click="OnUsersClicked"/>
+            <Button x:Name="AddArticle" Content="Добавить статью" Width="120" Margin="5" Click="OnAddArticleClicked"/>
+            <Button x:Name="ListArticles" Content="Список статей" Width="120" Margin="5" Click="OnListArticlesClicked"/>
         </StackPanel>
 
         <StackPanel DockPanel.Dock="Left" Background="LightGray" Width="150">

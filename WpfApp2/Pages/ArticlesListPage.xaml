@@ -1,0 +1,16 @@
+﻿<Page x:Class="WpfApp2.Pages.ArticlesListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="ArticlesListPage">
+    <Grid>
+        <ListView x:Name="ArticlesListView">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Заголовок" Width="120" DisplayMemberBinding="{Binding Title}" />
+                    <GridViewColumn Header="Автор" Width="100" DisplayMemberBinding="{Binding Author}" />
+                    <GridViewColumn Header="Содержание" Width="300" DisplayMemberBinding="{Binding Content}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>
