@@ -1,0 +1,16 @@
+﻿<Page x:Class="WpfApp2.Pages.AddArticlePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="AddArticlePage">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Заголовок" />
+            <TextBox x:Name="TitleTextBox" />
+
+            <TextBlock Text="Содержание" Margin="0,10,0,0"/>
+            <TextBox x:Name="ContentTextBox" Height="100" AcceptsReturn="True" />
+
+            <Button Content="Добавить" Click="OnAddArticleClicked"/>
+        </StackPanel>
+    </Grid>
+</Page>
